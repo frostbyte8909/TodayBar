@@ -1,0 +1,21 @@
+name: TodayBar
+options:
+  bundleIdPrefix: com.example
+targets:
+  TodayBar:
+    type: application
+    platform: macOS
+    deploymentTarget: "14.0"
+    sources: [TodayBar]
+    info:
+      path: TodayBar/Info.plist
+      properties:
+        LSUIElement: true
+        NSCalendarsUsageDescription: "TodayBar needs Calendar access to display today's events in the menu bar."
+        NSCalendarsFullAccessUsageDescription: "TodayBar needs full Calendar access to display today's events in the menu bar."
+        NSRemindersUsageDescription: "TodayBar needs Reminders access to display today's tasks in the menu bar."
+        NSRemindersFullAccessUsageDescription: "TodayBar needs full Reminders access to display today's tasks in the menu bar."
+    settings:
+      base:
+        CODE_SIGN_IDENTITY: "-"
+        CODE_SIGN_STYLE: Manual
